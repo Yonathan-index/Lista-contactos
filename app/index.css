@@ -1,0 +1,184 @@
+body {
+    height: 100vh;
+    padding: 0.5rem 1rem;
+}
+
+#contact-form {
+    padding: 0.5rem;
+    border-radius: 0.375rem;
+    border-width: 2px;
+    border-style: solid;
+    border-color: light-dark(var(--light-border-card-color)), (var(--dark-border-card-color));
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form-input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contact-form-label {
+    font-weight: 700;
+    font-size: 1.12rem;
+}
+
+.contact-form-input {
+    border-radius: 0.375rem;
+    outline-width: 1px;
+    outline-style: solid;
+    outline-color: light-dark(var(--light-border-card-color)), (var(--dark-border-card-color));
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    color: light-dark(var(--light-text-color), var(--dark-text-color));
+    background-color: transparent;
+}
+
+.contact-form-input:focus {
+    outline: 2px solid light-dark(var(--light-primary-color), var(--dark-primary-color));
+}
+
+/* .contact-form-input::placeholder {
+    color: red;
+} */
+
+.contact-form-error-text {
+    font-size: 0.75rem;
+    display: none;
+}
+
+#contact-form-btn {
+    background-color: light-dark(var(--light-primary-color), var(--dark-primary-color));
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    font-size: 0.90rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: light-dark(var(--dark-text-color), var(--light-text-color));
+    cursor: pointer;
+}
+#contact-form-btn:hover {
+    background-color: light-dark(var(--light-primary-darkened), var(--dark-primary-darkened));
+    transition: all 0.3s ease-in-out;
+}
+
+#main-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem   ;
+}
+
+#contact-list {
+    height: 50%;
+    padding: 1rem;
+    margin: 0;
+    list-style: none;
+    border-radius: 0.375rem;
+    background-color: transparent;
+    border-width: 2px;
+    border-style: solid;
+    border-color: light-dark(var(--light-border-card-color)), (var(--dark-border-card-color));
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow: auto;
+    
+}
+
+.contact-li-inputs-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5;
+    
+
+}
+
+.contact-li-input {
+    border-radius: 0.375rem;
+    outline-width: 1px;
+    outline-style: solid;
+    outline-color: light-dark(var(--light-border-card-color)), (var(--dark-border-card-color));
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    color: light-dark(var(--light-text-color), var(--dark-text-color));
+    background-color: transparent;
+   
+}
+
+
+
+.contact-li-edit-btn {
+    padding: 0.2rem 1rem;
+    color: light-dark(var(--light-primary-color), var(--dark-primary-color));
+    cursor: pointer;
+    border-radius: 0.375rem;
+    background-color: transparent;
+      
+}
+.contact-li-btns-container{
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+.contact-li-delete-btn {
+    padding: 0.2rem 1rem;
+    color: light-dark(var(--light-primary-color), var(--dark-primary-color));
+    cursor: pointer;
+    border-radius: 0.375rem;
+    background-color: transparent;
+    
+}
+.contact-li-edit-btn:hover {
+    background-color: light-dark(var(--light-primary-darkened), var(--dark-primary-darkened));
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-li-delete-btn:hover {
+    background-color: light-dark(var(--light-primary-darkened), var(--dark-primary-darkened));
+    transition: all 0.3s ease-in-out;
+}
+
+.delete-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.edit-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+@media (min-width: 768px){
+     #main-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 1rem;
+    gap: 1rem;
+    max-width: 40rem;
+    margin: auto;
+    justify-content: center;
+    }
+
+    .contact-li-inputs-container {
+        flex-direction: row;
+        
+    }
+
+     
+    .contact-li {
+        display: flex;
+        flex-grow: 1;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+
+   
+
+    
+}
+

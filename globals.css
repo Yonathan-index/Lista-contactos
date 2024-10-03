@@ -1,0 +1,45 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+   
+    border-color: white;
+}
+
+:root {
+    color-scheme: light dark;
+
+    --dark-primary-color: #09f6ab;
+    --dark-primary-darkened: #014e36;
+    --dark-background-page-color: #000;
+    --dark-text-color: #f5f5f5;
+    --dark-border-card-color: #404040;
+
+
+    --light-primary-color: #059669;
+    --light-primary-darkened: #022c22;
+    --light-background-page-color: #fff;
+    --light-text-color: #262626;
+    --light-border-card-color: #a3a3a3;
+
+}
+
+body, h2, h1, p {
+    margin: 0;
+}
+
+body, button {
+    font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+ font-style: normal;
+}
+
+body{
+    background-color: light-dark(var(--light-background-page-color), var(--dark-background-page-color));
+}
+
+
+
